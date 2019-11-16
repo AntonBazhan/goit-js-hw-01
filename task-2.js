@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const total = 100;
 
@@ -22,7 +22,7 @@ totalProduct = total < ordered ? '"На складе недостаточно т
 
 console.log(totalProduct)
 
-ordered = 1300;
+ordered = 130;
 
 totalProduct = total < ordered ? '"На складе недостаточно твоаров!"' : '"Заказ оформлен, с вами свяжется менеджер"';
 
