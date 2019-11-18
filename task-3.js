@@ -1,28 +1,27 @@
-'use strict';
+"use strict";
 
-const ADMIN_PASSWORD = 'jqueryismyjam';
+const ADMIN_PASSWORD = "jqueryismyjam";
 
-const passwordName = 'Please enter password';
+const passwordName = "Please enter password";
 
-let userChoise = prompt(passwordName);
+const userChoise = prompt(passwordName);
 
 let message;
 
 if (userChoise === null) {
-    message = 'Отменено пользователем!';
+  message = "Отменено пользователем!";
 } else {
-   switch (userChoise) {
-       case ADMIN_PASSWORD:
-           message = 'Добро пожаловать!';
-           
-           break;
-   
-       default:
-           message = 'Доступ запрещен, неверный пароль!';
-           break;
-   } 
+  switch (userChoise) {
+    case ADMIN_PASSWORD:
+      message = "Добро пожаловать!";
+
+      break;
+
+    default:
+      message = "Доступ запрещен, неверный пароль!";
+      break;
+  }
 }
 
 alert(message);
 
-console.log(userChoise);
