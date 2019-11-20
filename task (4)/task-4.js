@@ -4,9 +4,7 @@ const credits = 23580;
 
 const pricePerDroid = 3000;
 
-const totalDroid = "Сколько дроидов Вы хочете заказать?";
-
-const userChoise = prompt(totalDroid);
+const userChoise = prompt("Сколько дроидов Вы хочете заказать?");
 
 let message;
 

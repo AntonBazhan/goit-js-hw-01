@@ -10,9 +10,7 @@ const india = "INDIA";
 
 const jamaika = "JAMAIKA";
 
-const delivery = "В какую страну доставить товар?";
-
-let userChoise = prompt(delivery);
+const userChoise = prompt("В какую страну доставить товар?");
 
 let cost;
 

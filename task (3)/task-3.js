@@ -2,9 +2,7 @@
 
 const ADMIN_PASSWORD = "jqueryismyjam";
 
-const passwordName = "Please enter password";
-
-const userChoise = prompt(passwordName);
+const userChoise = prompt("Please enter password");
 
 let message;
 
