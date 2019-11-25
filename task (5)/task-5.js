@@ -16,40 +16,49 @@ let cost;
 
 let message;
 
+
 if (userChoise === null) {
   message = "Отменено пользователем!";
 } else {
+  // userChoise[0].toUpperCase() + userChoise.slice(1).toLowerCase();
+
   switch (userChoise.toUpperCase()) {
     case "CHINA":
       cost = 100;
-      message = `Доставка в ${userChoise.toUpperCase()} будет стоить ${cost} кредитов`;
-      break;
+      
+       break;
 
     case "CHILI":
       cost = 250;
-      message = `Доставка в ${userChoise.toUpperCase()} будет стоить ${cost} кредитов`;
-      break;
+      
+       break;
 
     case "AUSTRALIAU":
       cost = 170;
-      message = `Доставка в ${userChoise.toUpperCase()} будет стоить ${cost} кредитов`;
-      break;
+      
+       break;
 
     case "INDIA":
       cost = 80;
-      message = `Доставка в ${userChoise.toUpperCase()} будет стоить ${cost} кредитов`;
-      break;
+      
+       break;
 
     case "JAMAIKA":
       cost = 120;
-      message = `Доставка в ${userChoise.toUpperCase()} будет стоить ${cost} кредитов`;
-      break;
+     
+       break;
 
     default:
-      message = "В вашей стране доставка не доступна";
+       message = "В вашей стране доставка не доступна";
 
       break;
   }
+} 
+
+if (cost > 0) {
+
+  message = `Доставка в ${userChoise.toUpperCase()} будет стоить ${cost} кредитов`;
+
 }
 
 alert(message);
